@@ -58,23 +58,23 @@ pdf.multi_cell(200,10,txt='About the Disease',align='C')
 pdf.multi_cell(200, 10, txt = about,align = 'J')
 pdf.multi_cell(200, 10, txt ='Our Suggestion for you ',align = 'C')
 if output=='Actinic Keratosis':
-    fr=open("/root/skincancer/Actinic keratosis.txt","r")
+    fr=open("/root/treatment/Actinic keratosis.txt","r")
 elif output=="Basal Cell Carcinoma":
-    fr=open("/root/skincancer/Basal cell carcinoma.txt","r")
+    fr=open("/root/treatment/Basal cell carcinoma.txt","r")
 elif output=='Dermatofibroma':
-    fr=open("/root/skincancer/Dermatofibroma.txt","r")
+    fr=open("/root/treatment/Dermatofibroma.txt","r")
 elif output=="Melanoma":
-    fr=open("/root/skincancer/Melanoma.txt","r")
+    fr=open("/root/treatment/Melanoma.txt","r")
 elif output=='Nevus':
-    fr=open("/root/skincancer/Nevus.txt","r")
+    fr=open("/root/treatment/Nevus.txt","r")
 elif output=='Pigmented Benign Keratosis':
-    fr=open("/root/skincancer/Seborrheic keratosis.txt","r")
+    fr=open("/root/treatment/Seborrheic keratosis.txt","r")
 elif output=='Seborrheic Keratosis':
-    fr=open("/root/skincancer/Seborrheic keratosis.txt","r")
+    fr=open("/root/treatment/Seborrheic keratosis.txt","r")
 elif output=='Squamous Cell Carcinoma':
-    fr=open("/root/skincancer/Squamous cell carcinoma.txt","r")
+    fr=open("/root/treatment/Squamous cell carcinoma.txt","r")
 elif output=='Vascular Lesion':
-    fr=open("/root/skincancer/Vascular lesion.txt","r")
+    fr=open("/root/treatment/Vascular lesion.txt","r")
 for x in fr:
         pdf.multi_cell(200, 10, txt = x,align = 'J')      
 pdf.multi_cell(200, 10, txt = 'Health is Wealth , Keep Smiling!!!',align = 'C',border=1)      
