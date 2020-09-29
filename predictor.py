@@ -5,9 +5,8 @@ import numpy as np
 import os
 from fpdf import FPDF
 import datetime
-model = load_model('/root/skincancer/trained.h5')
-os.remove('/var/www/html/output/output.pdf')
-inputfolder='/var/www/html/input'
+model = load_model('/root/trained.h5')
+inputfolder='/root/input'
 image=os.listdir(inputfolder)
 image=image[0]
 inputfolder+image
@@ -80,5 +79,4 @@ for x in fr:
         pdf.multi_cell(200, 10, txt = x,align = 'J')      
 pdf.multi_cell(200, 10, txt = 'Health is Wealth , Keep Smiling!!!',align = 'C',border=1)      
 fr.close()
-pdf.output("/var/www/html/output/output.pdf")
-os.remove(inputfolder+'/'+image)
+pdf.output("/root/output/output.pdf")
